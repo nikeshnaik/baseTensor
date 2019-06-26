@@ -4,13 +4,17 @@ jobs:
   build:
     machine: true
 
-    # working_directory: '~/base'
+    working_directory: '~/base'
 
     steps:
       # Step 0 : Set nb_conda
       - run:
           name: setup anaconda
           command: |
+            mkdir ana_dir
+            cd ana_dir
+            cd ..
+            cd base
             wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
             bash Miniconda3-latest-Linux-x86_64.sh -b
       # Step 1: obtain repo from GitHub
