@@ -16,7 +16,7 @@ jobs:
             export PATH=$PATH:~/miniconda3/bin >> ~/.bashrc
             export PATH=$PATH:~/miniconda3/bin >> ~/.bash_profile
             source ~/.bashrc
-            source ~/.bash
+            source ~/.bash_profile
             cat ~/.bashrc
             conda --version
             conda list
