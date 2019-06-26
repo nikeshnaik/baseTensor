@@ -13,15 +13,12 @@ jobs:
           command: |
             wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
             bash Miniconda3-latest-Linux-x86_64.sh -b
+
             export PATH=$PATH:~/miniconda3/bin >> ~/.bashrc
             export PATH=$PATH:~/miniconda3/bin >> ~/.bash_profile
             source ~/.bashrc
             source ~/.bash_profile
-            cat ~/.bashrc
-            conda --version
-            conda list
             conda init bash
-            exec bash
             conda create -n tf
             conda activate tf
             while read requirement; do conda install --yes $requirement; done < requirements.txt
