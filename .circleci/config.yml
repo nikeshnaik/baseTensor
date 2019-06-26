@@ -4,7 +4,7 @@ jobs:
   build:
     machine: true
 
-    working_directory: ~/tensorconda
+    working_directory: ./
 
     steps:
       # Step 0 : Set nb_conda
