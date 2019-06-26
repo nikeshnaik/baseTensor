@@ -16,6 +16,7 @@ jobs:
             bash Miniconda3-latest-Linux-x86_64.sh -b
             cd base2
             export PATH=$PATH:$HOME/anaconda/bin >> ~/.bashrc
+            source ~/.bashrc
       # Step 1: obtain repo from GitHub
       - checkout
       # Step 2: create virtual env and install dependencies
