@@ -15,7 +15,7 @@ jobs:
             wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
             bash Miniconda3-latest-Linux-x86_64.sh -b
             cd base2
-            export PATH=$PATH:$HOME/anaconda/bin
+            export PATH=$PATH:$HOME/anaconda/bin >> ~/.bashrc
       # Step 1: obtain repo from GitHub
       - checkout
       # Step 2: create virtual env and install dependencies
