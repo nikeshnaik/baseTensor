@@ -1,2 +1,2 @@
 # baseTensor
-Goto Reusable Code Structure for TensorFlow models - Inspiration from &lt;a href='http://tiny.cc/gitrepo' target='_blank'>MrGemy95&lt;/a>
+Goto Reusable Code Structure for TensorFlow models - Inspiration from [MrGemy95](https://github.com/MrGemy95/Tensorflow-Project-Template)
