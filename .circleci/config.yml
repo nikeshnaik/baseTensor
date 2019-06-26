@@ -11,17 +11,10 @@ jobs:
       - run:
           name: setup anaconda
           command: |
-            cd ..
             wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
             bash Miniconda3-latest-Linux-x86_64.sh -b
-            cd base2
-            export PATH=$PATH:~/miniconda3/bin >> ~/.bashrc
-            export PATH=$PATH:~/miniconda3/bin >> ~/.bash_profile
-            source ~/.bashrc
-            cat ~/.bashrc
             conda --version
             conda list
-            ls -al ~/./
       # Step 1: obtain repo from GitHub
       - checkout
       # Step 2: create virtual env and install dependencies
