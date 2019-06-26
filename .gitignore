@@ -1,5 +1,7 @@
 #data files
 *.csv
 
-
+*.coverage
 __pycache__/
+*.pyc
+*.swp
