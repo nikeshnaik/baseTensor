@@ -18,6 +18,7 @@ jobs:
             export PATH=$PATH:~/miniconda3/bin >> ~/.bash_profile
             source ~/.bashrc
             source ~/.bash_profile
+            conda update conda
             conda init bash
             conda create -n tf
             conda activate tf
