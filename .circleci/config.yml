@@ -13,21 +13,31 @@ jobs:
           command: |
             wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
             bash Miniconda3-latest-Linux-x86_64.sh -b
+            export PATH=$PATH:~/miniconda3/bin >> ~/.bashrc
+            export PATH=$PATH:~/miniconda3/bin >> ~/.bash_profile
+            source ~/.bashrc
+            source ~/.bash
+            cat ~/.bashrc
             conda --version
             conda list
+            conda create -n tf
+            conda activate tf
+            while read requirement; do conda install --yes $requirement; done < requirements.txt
+
+            ls -al ~/./
       # Step 1: obtain repo from GitHub
       - checkout
       # Step 2: create virtual env and install dependencies
       - run:
           name: install dependencies
           command: |
-            conda create -n tf
-            conda activate tf
-            while read requirement; do conda install --yes $requirement; done < requirements.txt
+            # conda create -n tf
+            # conda activate tf
+            # while read requirement; do conda install --yes $requirement; done < requirements.txt
       # Step 3: run linter and tests
       - run:
           name: run tests
           command: |
-            conda activate tf
+            # conda activate tf
             flake8 --statistics
             pytest -v --cov='./'
