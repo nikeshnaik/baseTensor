@@ -16,6 +16,7 @@ jobs:
             bash Miniconda3-latest-Linux-x86_64.sh -b
             cd base2
             export PATH=$PATH:~/miniconda3/bin >> ~/.bashrc
+            export PATH=$PATH:~/miniconda3/bin >> ~/.bash_profile
             source ~/.bashrc
             cat ~/.bashrc
             conda --version
