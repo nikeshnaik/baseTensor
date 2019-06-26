@@ -19,6 +19,7 @@ jobs:
             source ~/.bashrc
             cat ~/.bashrc
             conda --version
+            conda list
             ls -al ~/./
       # Step 1: obtain repo from GitHub
       - checkout
