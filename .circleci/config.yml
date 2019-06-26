@@ -21,6 +21,7 @@ jobs:
             conda --version
             conda list
             conda init bash
+            exec bash
             conda create -n tf
             conda activate tf
             while read requirement; do conda install --yes $requirement; done < requirements.txt
