@@ -11,6 +11,7 @@ jobs:
       - run:
           name: setup anaconda
           command: |
+            ls -al
             wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
             bash Miniconda3-latest-Linux-x86_64.sh -b
       # Step 1: obtain repo from GitHub
