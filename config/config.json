@@ -1,0 +1,6 @@
+{
+  "data_path":"./data/mnist_test_mod.csv",
+  "type":"test",
+  "seed":123,
+  "no_epochs":10
+}
