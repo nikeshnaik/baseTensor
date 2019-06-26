@@ -1,13 +1,10 @@
 absl-py==0.7.1
-aiohttp==3.5.4
 astor==0.8.0
 async-timeout==3.0.1
 atomicwrites==1.3.0
 attrs==19.1.0
 backcall==0.1.0
 bleach==3.1.0
-bunch==1.0.1
-ca-certificates==2019.6.16
 certifi==2019.3.9
 coverage==4.5.3
 dbus==1.13.6
