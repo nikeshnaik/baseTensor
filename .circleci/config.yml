@@ -17,8 +17,9 @@ jobs:
             cd base2
             export PATH=$PATH:~/miniconda3/bin >> ~/.bashrc
             source ~/.bashrc
+            cat ~/.bashrc
             conda --version
-            ls ~/./
+            ls -al ~/./
       # Step 1: obtain repo from GitHub
       - checkout
       # Step 2: create virtual env and install dependencies
