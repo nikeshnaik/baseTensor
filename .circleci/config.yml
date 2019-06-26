@@ -9,10 +9,10 @@ jobs:
     steps:
       # Step 0 : Set nb_conda
       - run:
-        name: setup anaconda
-        command: |
-          wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
-          bash Miniconda3-latest-Linux-x86_64.sh
+          name: setup anaconda
+          command: |
+            wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+            bash Miniconda3-latest-Linux-x86_64.sh
       # Step 1: obtain repo from GitHub
       - checkout
       # Step 2: create virtual env and install dependencies
